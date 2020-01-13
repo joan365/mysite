@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+  <head>
+    <title>El meu blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+<body>
+  <div class="page-header">
+    <img src='{% static 'img/bloc.png' %}'>
+    <h1>El meu blog</h1>
+    <h4>Últimes publicacions</h4>
+  </div>
+  <div class="content container">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div class="peu">
+    <span id="versio">Versió 1.0</span><span id="copyr">Copyrigth JSB 2020</span>
+  </div>
+</body>
+</html>

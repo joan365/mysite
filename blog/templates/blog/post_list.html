@@ -1,9 +1,12 @@
-<html>
-    <head>
-        <title>El meu blog</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  {% for post in paltilla_posts %}
+      <div class="post">
+        <h3><a href="#{{ post.id }}">{{ post.title }}</a></h3>
+        <h5> Autor: {{ post.author }} <h5>
+        <h5 class="date">Publicat: {{ post.published_date }}</h5>
+        <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+  {% endfor %}
+{% endblock %}
