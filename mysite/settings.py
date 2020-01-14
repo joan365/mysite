@@ -25,7 +25,7 @@ SECRET_KEY = '5(xq!_vq^l)#ag%^%m5-!2_khxvlq@0#whts0*eg@!a6f=$0k2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.2.190', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['EC2_DNS_NAME']
 
 
 # Application definition
