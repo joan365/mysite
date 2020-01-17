@@ -3,12 +3,12 @@
     margin-left: 40px;
 }
 
-.post h3 a{
+.post .titol, .post .titol a{
   color: #FCA205;
   font-family: 'Lobster';
 }
 
-.post h3 a:hover, h3 a:visited {
+.titol a:hover, .titol a:visited {
     color: #000000;
 }
 
