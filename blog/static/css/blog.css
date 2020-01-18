@@ -3,6 +3,10 @@
     margin-left: 40px;
 }
 
+.home, .home a:visited{
+  color: #f5cb42;
+}
+
 .post .titol, .post .titol a{
   color: #FCA205;
   font-family: 'Lobster';
@@ -28,6 +32,13 @@
 
 .page-header h1 {
   margin-top: 10px;
+}
+.page-header .top-menu{
+  float: right;
+}
+
+.page-header .top-menu:visited{
+   color: #f5cb42;
 }
 
 .date {

@@ -11,14 +11,15 @@
   <div class="page-header">
     <img src='{% static 'img/bloc.png' %}'>
     <h1>El meu blog</h1>
-    <h4>Últimes publicacions</h4>
+    <a href="{% url 'post_new' %}" class="top-menu" alt="Nou post"><span class="glyphicon glyphicon-plus"></span></a>
+    <h4 class="home"><a href="/">Últimes publicacions</a></h4>
   </div>
   <div class="content container">
     {% block content %}
     {% endblock %}
   </div>
   <div class="peu">
-    <span id="versio">Versió 1.0</span><span id="copyr">Copyrigth JSB 2020</span>
+    <span id="versio">Versió 1.0.2</span><span id="copyr">Copyrigth JSB 2020</span>
   </div>
 </body>
 </html>
