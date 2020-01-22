@@ -21,7 +21,7 @@ class Post(models.Model):
     def resum(self):
         if (len(self.text) / 2) > 200:
             long = len(self.text) * 25 / 100
-        elif self.text > 200:
+        elif len(self.text) > 200:
             long = randrange(90, 150)
         else:
             long = len(self.tetx)
