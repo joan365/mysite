@@ -28,4 +28,4 @@ class Post(models.Model):
 
         return self.text[:int(long)] + "..."
 
-#He fet canvis una vegada mes
+
