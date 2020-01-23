@@ -27,3 +27,5 @@ class Post(models.Model):
             long = len(self.tetx)
 
         return self.text[:int(long)] + "..."
+
+#He fet canvis
