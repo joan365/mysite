@@ -23,8 +23,13 @@ class Post(models.Model):
             long = len(self.text) * 25 / 100
         elif len(self.text) > 200:
             long = randrange(90, 150)
+        elif len(self.text) > 20:
+            long = randrange(20, 90)
         else:
-            long = len(self.tetx)
+            #long = len(self.tetx) - 1
+            long = 0
 
-        print(long)
-        return self.text[:int(long)] + "..."
+        if long > 0:
+            return self.text[:int(long)] + "..."
+        else:
+            return "..."
