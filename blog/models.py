@@ -26,6 +26,5 @@ class Post(models.Model):
         else:
             long = len(self.tetx)
 
+        print(long)
         return self.text[:int(long)] + "..."
-
-
